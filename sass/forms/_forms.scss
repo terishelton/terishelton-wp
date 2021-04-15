@@ -1,0 +1,16 @@
+@import "buttons";
+
+@import "fields";
+
+/* Gravity Forms */
+
+body .gform_wrapper {
+	margin-top: 0;
+	
+	form {
+		label.gfield_label {
+			font-weight: 400;
+		}
+	}
+}
+

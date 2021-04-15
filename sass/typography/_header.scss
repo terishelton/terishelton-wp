@@ -1,0 +1,51 @@
+#masthead {
+	padding-top: 35px; 
+	width: $size__site;
+	margin: 0 auto;
+	background: $color__background-box;
+	display: flex;
+	
+	.site-branding {
+		width: 70%;
+		
+		@media screen and (min-width: 48.5625em) {
+			padding: 0 0 0 40px;
+			width: 50%;
+		}
+
+		.site-title {
+			margin: 0; padding: 0;
+			a {
+				font-family: 'Roboto';
+				font-size: 2.5em;
+				line-height: 1em;
+				font-weight: 300;
+				text-decoration: none;
+				letter-spacing: -0.05em;
+				padding-top: 40px;
+
+				@media screen and (min-width: 34.9375em) {
+					font-size: 3.6em;
+					padding-top: 0;
+				}
+			}
+		}
+		.site-description {
+			margin: 0; padding: 0;
+
+			position: relative;
+			top: 0;
+			left: 0;
+
+			font-size: 1.5em;
+			color: #aaa;
+
+			@media screen and (min-width: 34.9375em) {
+				top: -19px;
+				left: 15px;
+
+				font-size: 2.15em;
+			}
+		}
+	}
+}

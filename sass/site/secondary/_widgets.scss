@@ -1,0 +1,10 @@
+.widget {
+	margin: 0 0 1.5em;
+	
+	border-bottom: 1px #ccc dotted;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}

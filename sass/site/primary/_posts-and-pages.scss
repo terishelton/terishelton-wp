@@ -1,0 +1,142 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+/* Resume page */
+.skills-tools {
+	display: flex;
+	flex-wrap: wrap;
+	/*align-items: stretch;*/
+	
+	.tech-skills {
+		flex-grow: 2;
+		flex-basis: 34.9375em;
+		padding-right: 40px;
+		
+		@media screen and (max-width: 64.438em) {
+			padding-right: 0;
+		}
+	}
+	
+	.project-skills {
+		flex-grow: 1;
+		padding-right: 40px;
+		
+		@media screen and (max-width: 34.9375em) {
+			padding-right: 0;
+		}
+	}
+	
+	.people-skills {
+		flex-grow: 1;
+	}
+}
+
+
+.education-volunteer p {
+	display: flex;
+	
+	span.timeframe {
+		min-width: 100px;
+		display: inline-block;
+		
+		@media screen and (min-width: 34.9375em) {
+			min-width: 180px;
+		}
+	}
+
+	span.details {
+	}
+}
+
+#resume-footer {
+	display: flex;
+	justify-content: space-evenly;
+	.references, .download-pdf {
+		flex-basis: 30%;
+		
+	}
+}
+
+/* home page */
+.home { 
+	header.entry-header { display: none; }
+	
+	h1 .highlight {
+		color: $color__main;
+	}
+	
+	#about-skills {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		justify-content: space-between;
+		
+		#about {
+			flex-grow: 1;
+			flex-basis: 48%;
+			background-color: rgba(151, 153, 202, 0.2);
+			padding: 0 40px;
+			
+			@media screen and (min-width: 48.5625em) {
+				margin-right: 20px;
+			}
+		}
+		
+		#skills-snap {
+			flex-grow: 1;
+			flex-basis: 48%;
+			background-color: rgba(1, 181, 184, 0.2);
+			padding: 0 40px;
+			
+			.short-lists {
+				display: flex;
+				
+				ul {
+					flex-basis: 40%;
+				}
+			}
+		}
+	}
+	
+	#featured {
+		margin-bottom: 1.5em;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		
+		p {
+			display: flex;
+			flex-flow: column;
+		}
+		
+		.featured-item {
+			border: $border__portfolio-img $color__portfolio-border;
+			margin: 0 0 20px;
+			
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}

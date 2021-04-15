@@ -1,0 +1,27 @@
+button,
+.button a,
+input[type="button"],
+input[type="reset"],
+input[type="submit"], .read-more.button {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 4px;
+	background: $color__background-button;
+	color: #fff;
+	/*@include font-size(0.75);*/
+	line-height: 1;
+	padding: .7em 1.5em .5em;
+
+	&:hover,
+	&:active,
+	&:focus {
+		border-color: $color__border-button-hover;
+		background: $color__background-button-hover;
+		color: #fff;
+	}
+	&:visited {
+		color: #fff;
+	}
+}
+
+.button a { display: inline-block; }
