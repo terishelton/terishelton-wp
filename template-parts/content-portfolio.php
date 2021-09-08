@@ -67,8 +67,8 @@
 				// add tag name into portfolio-item class
 				?>
 				<div class="all portfolio-item scale-anm <?php echo $tag ?>">
-					<a href="<?php echo get_permalink() ?>">
-					<?php terishelton_post_thumbnail() ?>
+					<a href="<?php echo get_permalink() ?>" class="portfolio-item-link">
+						<?php terishelton_post_thumbnail() ?>
 					</a>
 					<h2><a href="<?php echo get_permalink() ?>"><?php echo the_title() ?></a></h2>
 				</div>

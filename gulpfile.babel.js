@@ -14,7 +14,7 @@ import sass from 'gulp-sass';
 const paths = {
 	publicStyles: {
 		src: 'sass/**/*.scss',
-		dest: 'sass'
+		dest: './'
 	}
 };
 
