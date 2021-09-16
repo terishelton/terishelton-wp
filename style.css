@@ -1115,3 +1115,9 @@ object {
   .project-type.custom-code, #filters li button.custom-code {
     border-color: #92374D;
     background-color: #92374D; }
+  .project-type.plugins, #filters li button.plugins {
+    border-color: #125E8A;
+    background-color: #125E8A; }
+  .project-type.storytelling-modules, #filters li button.storytelling-modules {
+    border-color: #DE6B48;
+    background-color: #DE6B48; }

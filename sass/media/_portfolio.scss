@@ -62,10 +62,6 @@
 			img {
 				height: 100%;
 				object-fit: cover;
-				
-				// @media screen and (min-width: 48.5625em) {
-				// 	max-width: 350px;
-				// }
 	
 				&:hover {
 					opacity: 0.8;
@@ -141,6 +137,14 @@
 	&.custom-code {
 		border-color: $color__portfolio-code;
 		background-color: $color__portfolio-code;
+	}
+	&.plugins {
+		border-color: $color__portfolio-plugins;
+		background-color: $color__portfolio-plugins;
+	}
+	&.storytelling-modules {
+		border-color: $color__portfolio-stm;
+		background-color: $color__portfolio-stm;
 	}
 }
 
